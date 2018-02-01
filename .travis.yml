@@ -13,5 +13,6 @@ script:
 
 #after_success:
 
-#  - ls ~/.travis/deploy_dockerhub.sh
+  - ls .travis/docker_dockerhub.sh
+  - cat .travis/docker_dockerhub.sh
 #  - sudo /bin/sh .travis/deploy_dockerhub.sh
