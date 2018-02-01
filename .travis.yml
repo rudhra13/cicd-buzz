@@ -15,4 +15,5 @@ script:
 
   - ls .travis/docker_dockerhub.sh
   - cat .travis/docker_dockerhub.sh
+  - which sh
 #  - sudo /bin/sh .travis/deploy_dockerhub.sh
