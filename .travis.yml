@@ -9,11 +9,11 @@ language: python
 script:
   - pwd
   - ls -la
-#  - python -m pytest -v
+  - python -m pytest -v
 
-#after_success:
+after_success:
 
   - ls .travis/docker_dockerhub.sh
   - cat .travis/docker_dockerhub.sh
   - which sh
-#  - sudo /bin/sh .travis/deploy_dockerhub.sh
+  - /bin/sh .travis/deploy_dockerhub.sh
