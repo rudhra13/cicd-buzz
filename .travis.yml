@@ -8,6 +8,7 @@ language: python
 
 script:
   - pwd
+  - ls -la
 #  - python -m pytest -v
 
 #after_success:
