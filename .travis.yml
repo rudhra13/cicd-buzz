@@ -7,7 +7,8 @@ services:
 language: python
 
 script:
-  - python -m pytest -v
+#  - python -m pytest -v
 
-after_success:
-  - sudo /bin/sh .travis/deploy_dockerhub.sh
+#after_success:
+  - ls .travis/deploy_dockerhub.sh
+#  - sudo /bin/sh .travis/deploy_dockerhub.sh
