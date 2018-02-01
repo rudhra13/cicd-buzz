@@ -7,8 +7,10 @@ services:
 language: python
 
 script:
+  - pwd
 #  - python -m pytest -v
 
 #after_success:
-  - ls ~/.travis/deploy_dockerhub.sh
+
+#  - ls ~/.travis/deploy_dockerhub.sh
 #  - sudo /bin/sh .travis/deploy_dockerhub.sh
