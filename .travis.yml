@@ -17,5 +17,5 @@ after_success:
   - cat .travis/docker_dockerhub.sh
   - which sh
   - pwd
-  - ls -la .travis/deploy_dockerhub.sh
-  - /bin/sh .travis/deploy_dockerhub.sh
+  - ls -la .travis/docker_dockerhub.sh
+  - /bin/sh .travis/docker_dockerhub.sh
