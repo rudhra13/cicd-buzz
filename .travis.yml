@@ -7,15 +7,8 @@ services:
 language: python
 
 script:
-  - pwd
-  - ls -la
   - python -m pytest -v
 
 after_success:
-
-  - ls .travis/docker_dockerhub.sh
-  - cat .travis/docker_dockerhub.sh
-  - which sh
-  - pwd
-  - ls -la .travis/docker_dockerhub.sh
-  - /bin/sh .travis/docker_dockerhub.sh
+  - sh .travis/deploy_dockerhub.sh
+  - test "$TRAVIS_BRANCH" = "master" && sh .travis/deploy_heroku.sh
